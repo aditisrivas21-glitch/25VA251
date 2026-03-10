@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom in Js</title>
+</head>
+<body>
+    <h2> Check your Age to cast to vote</h2>
+    <form action="">
+        <input type="number" placeholder="Enter your age!" name="age"
+        id="age/">
+        <input type="submit" value="submit" onclick="result()"/>
+    <script>
+    // DOM
+    function result(){
+    let myAge=document.getElementryId('age').value;
+    if(myAge >= 18){
+        alert("Eligible");
+    }
+    else{
+        alert("not Eligible");
+    }
+    }
+     </script>
+</body>
+</html>
