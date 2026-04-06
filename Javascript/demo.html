@@ -7,42 +7,46 @@
 </head>
 <body>
     <h1>Introduction to Javascript</h1>
-    <ul><li>Javscript is a cross-platform,object based scripting language for client and server applications,it is used everwhere</li>
-    <li>Loosly typed language.(doesn't require data types)</li>
-    <li>Interpreted at just in time compilation(runtime)rather than compile time.</li>
-   <li> can be embedded within html</li>
-   <li> high level and mullti paradigm.</li>
-   </ul>
-   <h2> Java Script</h2>
-   <script>
-    //JS Variable  containers that keep either value or not 
-    /JavaScript variables are named containers used to store data values. They are dynamically typed, meaning you don't need to specify the data type, and the type can change during execution./
-     //using var keyword
-    var myName="ABES"; //declare(expression)
- document.write(myName);//output on Browser 
- console.log(myName);//output on console //global 
- //Js execution and scope in js(global and local[block])
-    function hello(){
-        var msg="Thanks for visit!";
-        console.log(msg);//local or block
-    }
+    
+    <ul>
+        <li>Javascript is a cross-platform, object-based scripting language for client and server applications.</li>
+        <li>Loosely typed language (doesn't require data types).</li>
+        <li>Interpreted or just-in-time compiled (runtime).</li>
+        <li>Can be embedded within HTML.</li>
+        <li>High level and multi-paradigm.</li>
+    </ul>
+
+    <h2>Java Script</h2>
+
+    <script>
+        // JS variables are containers that store values
+
+        // JavaScript variables are dynamically typed
+
+        // using var keyword
+        var myName = "ABES";
+        document.write(myName); // output on browser
+        console.log(myName); // output on console
+
+        // function and local scope
+        function hello() {
+            var msg = "Thanks for visit!";
+            console.log(msg); // local variable
+        }
+
         hello();
-        //variable declarartion using let and const
-        let myRollno=2025123;
-        console.log(myRollno);
-        
 
-        myRollno=2025124;//no redclare but can reassign
+        // variable declaration using let and const
+        let myRollno = 2025123;
         console.log(myRollno);
 
-        const myPhonen0=425723726772;
-        console.log(myPhonen0);
-        //myPhonen0=425723726773;//error can't reassign
-        console.log(myPhonen0);
+        myRollno = 2025124; // can reassign
+        console.log(myRollno);
 
+        const myPhoneNo = 425723726772;
+        console.log(myPhoneNo);
 
-
-
-   </script>
+        // myPhoneNo = 123;  error (cannot reassign const)
+    </script>
 </body>
 </html>
